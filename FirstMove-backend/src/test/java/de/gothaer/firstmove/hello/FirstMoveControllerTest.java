@@ -1,12 +1,12 @@
-package de.gothaer.userbackend.hello;
+package de.gothaer.firstmove.hello;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class HelloControlerTest {
+class FirstMoveControllerTest {
 
-    private HelloControler classUnderTest = new HelloControler();
+    private FirstMoveController classUnderTest = new FirstMoveController();
     @Test
     void hello()
     {

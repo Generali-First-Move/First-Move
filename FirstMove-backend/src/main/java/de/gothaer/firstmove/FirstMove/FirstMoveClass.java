@@ -1,4 +1,4 @@
-package de.gothaer.userbackend.user;
+package de.gothaer.firstmove.FirstMove;
 
 
 
@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class User
+public class FirstMoveClass
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,7 +21,7 @@ public class User
 
     @Override
     public String toString() {
-        return "user{" +
+        return "FirstMove{" +
                 "id=" + id +
                 ", birthday ='" + birth_date + '\''+
                 ", name='" + name + '\'' +
@@ -30,14 +30,14 @@ public class User
                 '}';
     }
 
-    public User(){}
+    public FirstMoveClass(){}
 
-    public User(String name, String address) {
+    public FirstMoveClass(String name, String address) {
         this.name = name;
         this.address = address;
     }
 
-    public User(String birth_date, String name, String address, String wish_city)
+    public FirstMoveClass(String birth_date, String name, String address, String wish_city)
     {
         this.birth_date = birth_date;
         this.name = name;
@@ -81,10 +81,10 @@ public class User
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id &&
-                name.equals(user.name) &&
-                address.equals(user.address);
+        FirstMoveClass firstMoveClass = (FirstMoveClass) o;
+        return id == firstMoveClass.id &&
+                name.equals(firstMoveClass.name) &&
+                address.equals(firstMoveClass.address);
     }
 
     @Override

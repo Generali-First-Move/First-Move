@@ -1,4 +1,4 @@
-package de.gothaer.userbackend;
+package de.gothaer.firstmove;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class UserBackendApplicationTests {
+class FirstMoveClassBackendApplicationTests {
 @Autowired
 
 	@Test

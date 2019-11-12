@@ -1,4 +1,4 @@
-package de.gothaer.userbackend.user;
+package de.gothaer.firstmove.FirstMove;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +10,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-class UserControlerTest {
+class FirstMoveClassControlerTest {
     @MockBean
-    private UserService userService;
+    private FirstMoveService firstMoveService;
     @Autowired
     private MockMvc mockMvc;
 

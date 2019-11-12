@@ -1,4 +1,4 @@
-package de.gothaer.userbackend.hello;
+package de.gothaer.firstmove.hello;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/hello")
-public class HelloControler {
+public class FirstMoveController {
 
     @GetMapping
     public String hello()
