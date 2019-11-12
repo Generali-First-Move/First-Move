@@ -1,3 +1,4 @@
+/*
 package de.gothaer.firstmove.FirstMove;
 
 import org.junit.jupiter.api.Test;
@@ -27,4 +28,4 @@ class FirstMoveControlerUnitTest {
     void getAll() {
     }
 
-}
+}*/
