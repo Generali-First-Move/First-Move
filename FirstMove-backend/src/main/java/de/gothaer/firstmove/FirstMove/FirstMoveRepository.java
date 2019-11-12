@@ -8,7 +8,7 @@ import java.util.List;
 //Client <-> Service layer <-> Repository Layer <-> DB
 
 @Repository
-public interface FirstMoveRepository extends JpaRepository<FirstMoveClass, Long> // Repository = Aufbewahrungsort, Depot
+public interface FirstMoveRepository extends JpaRepository<FirstMove, Long> // Repository = Aufbewahrungsort, Depot
 {
-    List<FirstMoveClass> findByAddress(String color);
+    List<FirstMove> findByAddress(String color);
 }

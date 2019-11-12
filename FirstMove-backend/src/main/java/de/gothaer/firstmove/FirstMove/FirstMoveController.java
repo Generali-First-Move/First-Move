@@ -19,39 +19,39 @@ public class FirstMoveController
     }
 
     @GetMapping // findet alle Benutzer als Liste
-    public ResponseEntity<List<FirstMoveClass>> getAll()
+    public ResponseEntity<List<FirstMove>> getAll()
     {
       return ResponseEntity.ok(firstMoveService.findAll());
     }
 
     @GetMapping("/{id}") // findet nach ID
-    public ResponseEntity<FirstMoveClass> findOne(@PathVariable Long id)
+    public ResponseEntity<FirstMove> findOne(@PathVariable Long id)
     {
         return ResponseEntity.ok(firstMoveService.findById(id));
     }
-    //PathVariable bindet die URL ../id an die ID aus der Klasse FirstMoveClass
+    //PathVariable bindet die URL ../id an die ID aus der Klasse FirstMove
 
     @PutMapping("/change")
-    public ResponseEntity<FirstMoveClass> updateOne(@Valid @RequestBody FirstMoveClass firstMoveClass){
+    public ResponseEntity<FirstMove> updateOne(@Valid @RequestBody FirstMove firstMove){
         //RequestBody mapped den HTTPRequest. Lässt das arbeiten des HTTPRequest mit Java Objecten zu
         //Valid prüft ob Argumente valide sind. Fall nicht wird MethodArgumentNotValidException
 
-        if (firstMoveClass.getId() <= firstMoveService.findAll().size()){
-            FirstMoveClass master = FirstMoveService.findById(firstMoveClass.getId());
-            master.setAddress(firstMoveClass.getAddress());
-            master.setName(firstMoveClass.getName());
-            final FirstMoveClass updatecat = firstMoveService.save(master);
+        if (firstMove.getId() <= firstMoveService.findAll().size()){
+            FirstMove master = FirstMoveService.findById(firstMove.getId());
+            master.setAddress(firstMove.getAddress());
+            master.setName(firstMove.getName());
+            final FirstMove updatecat = firstMoveService.save(master);
             return ResponseEntity.ok(updatecat);
         }
         else {
-            return addcat(firstMoveClass);
+            return addcat(firstMove);
         }
     }
 
     @PostMapping
-    public ResponseEntity<FirstMoveClass> addcat (@RequestBody FirstMoveClass firstMoveClass)
+    public ResponseEntity<FirstMove> addcat (@RequestBody FirstMove firstMove)
     {
-        FirstMoveClass newcat = firstMoveService.save(firstMoveClass);
+        FirstMove newcat = firstMoveService.save(firstMove);
         return ResponseEntity.created(ServletUriComponentsBuilder
                 .fromCurrentRequest()
                 .path("/{id}")

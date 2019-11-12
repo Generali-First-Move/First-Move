@@ -22,33 +22,33 @@ public class FirstMoveService
     @PostConstruct
     public void init()
     {
-        FirstMoveClass FirstMoveClass = new FirstMoveClass("31.12.2019","Julia", "Pfad 4","Aachen");
-        FirstMoveClass firstMoveClass1 = new FirstMoveClass("01.01.1999","Philip", "Straße 2", "Köln");
-        FirstMoveClass firstMoveClass2 = new FirstMoveClass("01.05.1987","Tamara", "Weg 1", "Berlin");
+        FirstMove FirstMove = new FirstMove("31.12.2019","Julia", "Pfad 4","Aachen");
+        FirstMove firstMove1 = new FirstMove("01.01.1999","Philip", "Straße 2", "Köln");
+        FirstMove firstMove2 = new FirstMove("01.05.1987","Tamara", "Weg 1", "Berlin");
 
-        firstMoveRepository.save(FirstMoveClass);
-        firstMoveRepository.save(firstMoveClass1);
-        firstMoveRepository.save(firstMoveClass2);
+        firstMoveRepository.save(FirstMove);
+        firstMoveRepository.save(firstMove1);
+        firstMoveRepository.save(firstMove2);
 
         LOGGER.info("******************");
-        List<FirstMoveClass> all = firstMoveRepository.findAll();
+        List<FirstMove> all = firstMoveRepository.findAll();
         all.forEach(c -> LOGGER.info(c.toString()));
 
         LOGGER.info("*****************************");
-        List<FirstMoveClass> list_address = firstMoveRepository.findByAddress ("Weg 1");
+        List<FirstMove> list_address = firstMoveRepository.findByAddress ("Weg 1");
         list_address.forEach(c-> LOGGER.info(c.toString()));
 
     }
 
-    public List<FirstMoveClass> findAll()
+    public List<FirstMove> findAll()
     {
         return firstMoveRepository.findAll();
     }
 
-    public static FirstMoveClass save(FirstMoveClass s)
+    public static FirstMove save(FirstMove s)
     {
         return firstMoveRepository.save(s);
     }
 
-    public static FirstMoveClass findById (Long aLong) { return firstMoveRepository.findById(aLong).orElseThrow(()-> new FirstMoveNotFoundException("Cat with id " + aLong + "does not exist"));}
+    public static FirstMove findById (Long aLong) { return firstMoveRepository.findById(aLong).orElseThrow(()-> new FirstMoveNotFoundException("Cat with id " + aLong + "does not exist"));}
 }

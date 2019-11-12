@@ -8,7 +8,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
-class FirstMoveClassControlerUnitTest {
+class FirstMoveControlerUnitTest {
     private FirstMoveService firstMoveServiceMock = mock(FirstMoveService.class);
     private FirstMoveController classUnderTest = new FirstMoveController(firstMoveServiceMock);
 
@@ -16,10 +16,10 @@ class FirstMoveClassControlerUnitTest {
     @Test
     void findOne() throws Exception
     {
-        FirstMoveClass mock = new FirstMoveClass("mario", "green");
+        FirstMove mock = new FirstMove("mario", "green");
         when(firstMoveServiceMock.findById(1L)).thenReturn(mock);
 
-        ResponseEntity<FirstMoveClass> one = classUnderTest.findOne(1L);
+        ResponseEntity<FirstMove> one = classUnderTest.findOne(1L);
         assertEquals("mario", one.getBody().getName());
     }
 

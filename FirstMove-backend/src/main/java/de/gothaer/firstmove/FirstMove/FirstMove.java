@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class FirstMoveClass
+public class FirstMove
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -30,14 +30,14 @@ public class FirstMoveClass
                 '}';
     }
 
-    public FirstMoveClass(){}
+    public FirstMove(){}
 
-    public FirstMoveClass(String name, String address) {
+    public FirstMove(String name, String address) {
         this.name = name;
         this.address = address;
     }
 
-    public FirstMoveClass(String birth_date, String name, String address, String wish_city)
+    public FirstMove(String birth_date, String name, String address, String wish_city)
     {
         this.birth_date = birth_date;
         this.name = name;
@@ -81,10 +81,10 @@ public class FirstMoveClass
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        FirstMoveClass firstMoveClass = (FirstMoveClass) o;
-        return id == firstMoveClass.id &&
-                name.equals(firstMoveClass.name) &&
-                address.equals(firstMoveClass.address);
+        FirstMove firstMove = (FirstMove) o;
+        return id == firstMove.id &&
+                name.equals(firstMove.name) &&
+                address.equals(firstMove.address);
     }
 
     @Override
