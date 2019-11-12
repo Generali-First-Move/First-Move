@@ -1,100 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac9f293e-9524-4480-a149-32f9feb0a7b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../FirstMove-backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstMove-backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstMove-backend/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstMove-backend/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstMove-backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstMove-backend/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstMove-backend/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstMove-backend/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstMove-backend/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstMove-backend/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstMove-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstMove-backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstMove-backend/src/main/java/de/gothaer/userbackend/UserBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstMove-backend/src/main/java/de/gothaer/userbackend/UserBackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstMove-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstMove-backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstMove-backend/src/test/java/de/gothaer/userbackend/UserBackendApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstMove-backend/src/test/java/de/gothaer/userbackend/UserBackendApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/gothaer/userbackend/Advice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/gothaer/userbackend/UserBackendApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/gothaer/userbackend/hello/HelloControler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/gothaer/userbackend/user/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/gothaer/userbackend/user/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/gothaer/userbackend/user/UserNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/gothaer/userbackend/user/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/gothaer/userbackend/user/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/gothaer/userbackend/UserBackendApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/gothaer/userbackend/hello/HelloControlerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/gothaer/userbackend/hello/HelloControlerTestSpringBoot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/gothaer/userbackend/user/UserControlerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/gothaer/userbackend/user/UserControlerUnitTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="75e1108e-3318-47f8-80d8-370cec016f52" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-        <option name="jdkForImporter" value="1.8" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1SdibYh4BikY5PKi9kpDJQst06w" />
+  <component name="ProjectId" id="1TWDS8kGQQJe10CPrPOwmwHuZAE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FirstMove-backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="de.gothaer.catbackend.cat" />
-      <recent name="de.gothaer.catbackend.hello" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="de.gothaer.catbackend.cat" />
-      <recent name="de.gothaer.catbackend.hello" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="de.gothaer.catbackend.cat" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -108,107 +36,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CatBackendApplication">
-    <configuration name="HelloControlerTestSpringBoot.hello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FirstMove-backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.gothaer.userbackend.hello.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.gothaer.userbackend.hello" />
-      <option name="MAIN_CLASS_NAME" value="de.gothaer.userbackend.hello.HelloControlerTestSpringBoot" />
-      <option name="METHOD_NAME" value="hello" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloControlerTestSpringBoot.helloname" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FirstMove-backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.gothaer.userbackend.hello.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.gothaer.userbackend.hello" />
-      <option name="MAIN_CLASS_NAME" value="de.gothaer.userbackend.hello.HelloControlerTestSpringBoot" />
-      <option name="METHOD_NAME" value="helloname" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloControlerTest.hello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FirstMove-backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.gothaer.userbackend.hello.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.gothaer.userbackend.hello" />
-      <option name="MAIN_CLASS_NAME" value="de.gothaer.userbackend.hello.HelloControlerTest" />
-      <option name="METHOD_NAME" value="hello" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloControlerTest.helloname" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FirstMove-backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.gothaer.userbackend.hello.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.gothaer.userbackend.hello" />
-      <option name="MAIN_CLASS_NAME" value="de.gothaer.userbackend.hello.HelloControlerTest" />
-      <option name="METHOD_NAME" value="helloname" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CatBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="FirstMove-backend" />
+  <component name="RunManager">
+    <configuration name="UserBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.gothaer.userbackend.UserBackendApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.HelloControlerTestSpringBoot.hello" />
-        <item itemvalue="JUnit.HelloControlerTestSpringBoot.helloname" />
-        <item itemvalue="JUnit.HelloControlerTest.helloname" />
-        <item itemvalue="JUnit.HelloControlerTest.hello" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ac9f293e-9524-4480-a149-32f9feb0a7b6" name="Default Changelist" comment="" />
-      <created>1571899945490</created>
+      <changelist id="75e1108e-3318-47f8-80d8-370cec016f52" name="Default Changelist" comment="" />
+      <created>1573566954398</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571899945490</updated>
-      <workItem from="1571899952240" duration="20348000" />
-      <workItem from="1571986992388" duration="8881000" />
-      <workItem from="1571996734203" duration="1544000" />
-      <workItem from="1573125727784" duration="574000" />
-      <workItem from="1573456525915" duration="2516000" />
-      <workItem from="1573459383065" duration="7501000" />
-      <workItem from="1573470491695" duration="597000" />
-      <workItem from="1573554866147" duration="3184000" />
-      <workItem from="1573564846482" duration="271000" />
-      <workItem from="1573568799282" duration="392000" />
+      <updated>1573566954398</updated>
+      <workItem from="1573566956095" duration="1441000" />
     </task>
     <servers />
   </component>
