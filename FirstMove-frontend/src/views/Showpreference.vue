@@ -201,12 +201,12 @@
             <footer >
                 <div class="container-fluid text-center text-md-left">
                     <div class="row">
-                        <div class="col-md-8">
-                            <h5>GeneraliAG</h5>
-                            <p>Gerne könnt ihr uns in den Sozialen Netzwerken weiter verfolgen.</p>
+                        <div class="col-md-6">
+                            <p>In Zusammenarbeit mit:</p>
+                            <a href="https://www.generali.de/ueber-generali/ueber-uns/"><img src="@/assets/generali.png" alt="Bild" width="90" height="70"/></a>
                         </div>
                         <hr class="clearfix w-100 d-md-none pb-3">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <h5 class="text-uppercase">Soziale Netzwerke</h5>
                             <div class="form-group row" id="link">
                                 <p>...</p><i class="fab fa-instagram"></i>
@@ -216,6 +216,7 @@
                         </div>
                     </div>
                 </div>
+                <p> © Copyright</p>
             </footer>
         </div>
     </div>
@@ -254,16 +255,18 @@
         border-radius: 6px;
     }
     #box{
-        border: 2px solid lightgrey;
+        border: 1px solid white;
         text-align: left;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 15px;
         padding-right: 20px;
-    color: black;
-        background-color: lightgrey;
+        color: white;
+        background-color: #C5281C;
     }
-
+#box label{
+    font-variant: small-caps;
+}
 #box input{
     border: 1px solid #C5281C;
 }
@@ -274,7 +277,7 @@
 }
 #box h5{
     font-weight: bold;
-    color: black;
+    color: white;
 }
 #show h4{
     color: white;
@@ -283,8 +286,9 @@
 }
 
 #box button{
-    background-color: #C5281C;
-    color: white;
+    background-color: white;
+    color: black;
+    border-color: white;
 }
 
     #link p{
@@ -318,7 +322,7 @@
         appearance: none;
         width: 25px;
         height: 25px;
-        background: #C5281C;
+        background: black;
         cursor: pointer;
     }
 
