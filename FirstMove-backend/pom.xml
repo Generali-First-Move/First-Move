@@ -9,15 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>de.gothaer</groupId>
-<<<<<<< HEAD
-	<artifactId>firstMove-backend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>firstMove-backend</name>
-=======
 	<artifactId>FirstMove-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>FirstMove-backend</name>
->>>>>>> d6bc84f4c4a214fa107ffd7da1c33d875d283acd
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

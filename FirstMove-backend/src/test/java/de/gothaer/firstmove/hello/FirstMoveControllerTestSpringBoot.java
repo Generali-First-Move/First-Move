@@ -1,3 +1,4 @@
+/*
 package de.gothaer.firstmove.hello;
 
 import org.junit.jupiter.api.Test;
@@ -33,4 +34,4 @@ class FirstMoveControllerTestSpringBoot {
                 .andExpect(content().string("Hello Mario"));
 
     }
-}
+}*/
