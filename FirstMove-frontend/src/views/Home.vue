@@ -28,12 +28,12 @@
            <footer >
                <div class="container-fluid text-center text-md-left">
                    <div class="row">
-                       <div class="col-md-8">
-                           <h5>GeneraliAG</h5>
-                           <p>Gerne könnt ihr uns in den Sozialen Netzwerken weiter verfolgen.</p>
-                       </div>
+                       <div class="col-md-6">
+                           <p>In Zusammenarbeit mit:</p>
+                           <a href="https://www.generali.de/ueber-generali/ueber-uns/"><img src="@/assets/generali.png" alt="Bild" width="90" height="70"/></a>
+                           </div>
                    <hr class="clearfix w-100 d-md-none pb-3">
-                       <div class="col-md-3">
+                       <div class="col-md-4">
                            <h5 class="text-uppercase">Soziale Netzwerke</h5>
                            <div class="form-group row" id="link">
                                <p>...</p><i class="fab fa-instagram"></i>
@@ -43,6 +43,7 @@
                        </div>
                    </div>
                </div>
+               <p> © Copyright</p>
            </footer>
        </div>
    </div>
