@@ -1,19 +1,38 @@
 <template>
-    <div id="home">
-        <nav class="navbar navbar-light" style="background-color: maroon">
-            <h3 style="color: white">FirstMove</h3>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+    <div id="home" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="pic">
+            <img src="@/assets/logo_transparent.png" width="130" height="115" alt="logo">
+            <div class="nav justify-content-center" id="navbarNav" >
                 <div class="navbar-nav" >
-                    <router-link to="/" class="nav-link" style="color: white">Home</router-link>
-                    <router-link to="/show-preference" class="nav-link" style="color: white">Präferenzen</router-link>
-                    <router-link to="/result" class="nav-link" style="color: white">Kontakt</router-link>
-                    <router-link to="/result" class="nav-link" style="color: white">Impressum</router-link>
+                    <router-link to="/" class="nav-link" style="color: black">Home</router-link>
+                    <router-link to="/show-preference" class="nav-link" style="color: black">Präferenzen</router-link>
+                    <router-link to="/result" class="nav-link" style="color: black">Kontakt</router-link>
+                    <router-link to="/result" class="nav-link" style="color: black">Impressum</router-link>
                 </div>
             </div>
         </nav>
 
     </div>
 </template>
+
+<style>
+#home{
+    background-color: maroon;
+    padding: 0;
+    margin: 0;
+}
+    #navbarNav{
+        text-align: center;
+        padding-left: 310px;
+    }
+
+    #pic{
+        padding: 0;
+        margin: 0;
+    }
+    #navbarNav{
+        font-variant: small-caps;
+        font-size: large;
+    }
+
+</style>

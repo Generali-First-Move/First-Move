@@ -1,7 +1,8 @@
 <template v-else>
-    <div>
+    <div id="show">
         <br>
-        <h2><b>Bitte geben Sie ihre persönlichen Daten und Präferenzen an:</b></h2>
+        <h4><b>Hier hast du nun die Möglichkeit deine persönlichen Daten und Präferenzen anzugeben.
+        Anschließend wirst du auf eine Seite mit einer Auflistung der Wohnorte, angepasst an deine individuellen Eingaben weitergeleitet.</b></h4>
         <br>
         <div class="container" id="box">
             <form>
@@ -28,19 +29,32 @@
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Allergien</label>
+                    <div class="col">
+                        <textarea rows="4" cols="50"></textarea>
+                    </div>
+                    <div class="col">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox">Keine Allergien bekannt</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Anzahl Ergebnisse</label>
                     <div class="col">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox0">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">2</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox2">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">3</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox3">3</label>
                         </div>
                     </div>
                 </div>
@@ -87,77 +101,122 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Essensmöglichkeiten</label>
                     <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange2">
+                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange3">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Ruhe/Atmosphäre</label>
                     <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange2">
+                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange4">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Kriminalitätsrate</label>
+                    <div class="col">
+                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange5">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Uni Nähe*</label>
                     <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange2">
+                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange10">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"></label>
+                    <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox11">FH Aachen</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox12">RWTH Aachen</label>
+                </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Lage</label>
                     <div class="col">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">Innenstadt</label>
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox4">Innenstadt</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">weiter außerhalb</label>
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox5">weiter außerhalb</label>
                     </div>
                     </div>
                 </div>
+
                 <br>
                 <h5 class="text-uppercase">Freizeit</h5><br>
                 <div class="form-group row">
                     <label for="inputplace1" class="col-sm-2 col-form-label">Sportaktivitäten</label>
                     <div class="col">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Fitnessstudio</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox6">Fitnessstudio</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Schwimmbäder</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox7">Schwimmbäder</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Kletterhalle</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox8">Kletterhalle</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Schwimmbäder</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox9">Schwimmbäder</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Fußball</label>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox10">Fußball</label>
                         </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Park</label>
                     <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange2">
+                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange6">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Nightlife</label>
                     <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange2">
+                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange7">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-dark">Submit</button>
+                <div>
+                    <router-link to="/result" class="nav-link"><button type="button" name="action" class="btn btn-secondary btn-lg">Abschicken</button></router-link>
+                </div>
+
                 <br>
-                <p>*Felder dei mit Stern makiert sindm sind optional </p>
+                <p>*Felder dei mit Stern makiert sind sind optional </p>
             </form>
+        </div>
+        <div id="footer">
+            <hr width="100%" style="height: 3px; background-color: white">
+            <footer >
+                <div class="container-fluid text-center text-md-left">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h5>GeneraliAG</h5>
+                            <p>Gerne könnt ihr uns in den Sozialen Netzwerken weiter verfolgen.</p>
+                        </div>
+                        <hr class="clearfix w-100 d-md-none pb-3">
+                        <div class="col-md-3">
+                            <h5 class="text-uppercase">Soziale Netzwerke</h5>
+                            <div class="form-group row" id="link">
+                                <p>...</p><i class="fab fa-instagram"></i>
+                                <p>...</p><i class="fab fa-twitter-square"></i>
+                                <p>...</p><i class="fab fa-facebook-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
 </template>
@@ -186,16 +245,28 @@
 </script>
 
 <style>
+    #show{
+        background-color: #C5281C;
+    }
+
+    #show textarea{
+        border: 1px solid #C5281C;
+        border-radius: 6px;
+    }
     #box{
-        border: 2px solid maroon;
+        border: 2px solid lightgrey;
         text-align: left;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 15px;
         padding-right: 20px;
+    color: black;
+        background-color: lightgrey;
     }
 
-
+#box input{
+    border: 1px solid #C5281C;
+}
 #rating{
 
     padding-right: 350px;
@@ -203,15 +274,35 @@
 }
 #box h5{
     font-weight: bold;
-    color: maroon;
+    color: black;
 }
+#show h4{
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#box button{
+    background-color: #C5281C;
+    color: white;
+}
+
+    #link p{
+        color: white;
+    }
+
+    #footer{
+        background-color: white;
+        color: black;
+        font-variant: small-caps;
+    }
 
     /*Slider*/
     .slider {
         -webkit-appearance: none;
         width: 50%;
         height: 25px;
-        background: #d3d3d3;
+        background: white;
         outline: none;
         opacity: 0.7;
         -webkit-transition: .2s;
@@ -227,7 +318,7 @@
         appearance: none;
         width: 25px;
         height: 25px;
-        background: maroon;
+        background: #C5281C;
         cursor: pointer;
     }
 
