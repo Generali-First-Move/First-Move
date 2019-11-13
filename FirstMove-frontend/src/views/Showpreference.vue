@@ -247,7 +247,8 @@
 
 <style>
     #show{
-        background-color: #C5281C;
+        background-color: #c55b4e;
+
     }
 
     #show textarea{
@@ -263,6 +264,7 @@
         padding-right: 20px;
         color: white;
         background-color: #C5281C;
+
     }
 #box label{
     font-variant: small-caps;
@@ -322,14 +324,14 @@
         appearance: none;
         width: 25px;
         height: 25px;
-        background: black;
+        background: #000000;
         cursor: pointer;
     }
 
     .slider::-moz-range-thumb {
         width: 25px;
         height: 25px;
-        background: #4CAF50;
+        background: #000000;
         cursor: pointer;
     }
 </style>
