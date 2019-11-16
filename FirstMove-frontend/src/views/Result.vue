@@ -40,7 +40,15 @@
                             <h3 class ="Pro">Pro:</h3>
                             <i class="fas fa-check-square"> Gute Busanbindung </i>
                             <br>
+                            <i class="fas fa-check-square"> sicherheit </i>
+                            <br>
+                            <i class="fas fa-check-square"> Ruhe/Atmosphäre </i>
+                            <br>
+                            <i class="fas fa-check-square"> Essensmöglichkeiten </i>
+                            <br>
                             <i class="fas fa-check-square">Nähe Bahnhof</i>
+                            <br>
+                            <i class="fas fa-check-square"> Uni Nähe </i>
                             <br>
                             <i class="fas fa-check-square"> Park</i>
                             <br>
@@ -57,7 +65,15 @@
                             <h3 class ="Pro">Pro:</h3>
                             <i class="fas fa-check-square"> Gute Busanbindung </i>
                             <br>
+                            <i class="fas fa-check-square"> sicherheit </i>
+                            <br>
+                            <i class="fas fa-check-square"> Ruhe/Atmosphäre </i>
+                            <br>
+                            <i class="fas fa-check-square"> Essensmöglichkeiten </i>
+                            <br>
                             <i class="fas fa-check-square">Nähe Bahnhof</i>
+                            <br>
+                            <i class="fas fa-check-square"> Uni Nähe </i>
                             <br>
                             <i class="fas fa-check-square"> Park</i>
                             <br>
@@ -74,7 +90,15 @@
                             <h3 class ="Pro">Pro:</h3>
                             <i class="fas fa-check-square"> Gute Busanbindung </i>
                             <br>
+                            <i class="fas fa-check-square"> sicherheit </i>
+                            <br>
+                            <i class="fas fa-check-square"> Ruhe/Atmosphäre </i>
+                            <br>
+                            <i class="fas fa-check-square"> Essensmöglichkeiten </i>
+                            <br>
                             <i class="fas fa-check-square">Nähe Bahnhof</i>
+                            <br>
+                            <i class="fas fa-check-square"> Uni Nähe </i>
                             <br>
                             <i class="fas fa-check-square"> Park</i>
                             <br>

@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Kriminalitätsrate</label>
+                    <label class="col-sm-2 col-form-label">sicherheit</label>
                     <div class="col">
                         <input type="range" min="1" max="10" value="1" class="slider" id="myRange5">
                     </div>
