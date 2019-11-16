@@ -94,7 +94,7 @@
             <footer >
                 <div class="container-fluid text-center text-md-left">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <p>In Zusammenarbeit mit:</p>
                             <a href="https://www.generali.de/ueber-generali/ueber-uns/"><img src="@/assets/generali.png" alt="Bild" width="90" height="70"/></a>
                         </div>
@@ -106,10 +106,11 @@
                                 <p>...</p><i class="fab fa-twitter-square"></i>
                                 <p>...</p><i class="fab fa-facebook-square"></i>
                             </div>
+                            <p> © Copyright</p>
                         </div>
                     </div>
                 </div>
-                <p> © Copyright</p>
+
             </footer>
         </div>
     </div>
