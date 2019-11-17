@@ -1,3 +1,5 @@
+
+
 <template>
   <div id="app" >
     <Firstmove />
@@ -8,13 +10,14 @@
 </template>
 
 <script>
-  import Firstmove from '@/components/Firstmove.vue'
+
+  import Firstmove from '@/components/Firstmove.vue';
   import Firstmovefooter from "./components/Firstmovefooter";
 
   export default {
     components:{
       Firstmovefooter,
-      Firstmove
+      Firstmove,
     }
   }
 
