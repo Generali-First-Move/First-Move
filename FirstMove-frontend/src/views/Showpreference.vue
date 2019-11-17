@@ -2,11 +2,12 @@
     <div id="show">
         <br>
         <h4><b>Hier hast du nun die Möglichkeit deine persönlichen Daten und Präferenzen anzugeben.
-        Anschließend wirst du auf eine Seite mit einer Auflistung der Wohnorte, angepasst an deine individuellen Eingaben weitergeleitet.</b></h4>
+            Anschließend wirst du auf eine Seite mit einer Auflistung der Wohnorte, angepasst an deine individuellen Eingaben weitergeleitet.</b></h4>
         <br>
         <div class="container" id="box">
             <form>
-                <h5 class="text-uppercase">Persönliche Daten</h5><br>
+                <h5 class="text-uppercase">Persönliche Daten</h5>
+                <br>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Name</label>
                     <div class="col">
@@ -58,14 +59,14 @@
                         </div>
                     </div>
                 </div>
-<br>
+                <br>
                 <h5 class="text-uppercase">Umgebung und Lage</h5><br>
                 <div class="form-group row" >
                     <label class="col-sm-2 col-form-label">Rating</label>
                     <div class="col" id="rating">
                         <table style="width:90%" id="table">
                             <tr>
-                               <td>1</td>
+                                <td>1</td>
                                 <td>2</td>
                                 <td>3</td>
                                 <td>4</td>
@@ -82,7 +83,10 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Gute Busanbindung</label>
                     <div class="col">
+
                         <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
+
+
                     </div>
                 </div>
                 <div class="form-group row">
@@ -111,7 +115,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Kriminalitätsrate</label>
+                    <label class="col-sm-2 col-form-label">sicherheit</label>
                     <div class="col">
                         <input type="range" min="1" max="10" value="1" class="slider" id="myRange5">
                     </div>
@@ -125,27 +129,27 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label"></label>
                     <div class="col">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox11">FH Aachen</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox12">RWTH Aachen</label>
-                </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox11">FH Aachen</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox12">RWTH Aachen</label>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Lage</label>
                     <div class="col">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox4">Innenstadt</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox5">weiter außerhalb</label>
-                    </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox4">Innenstadt</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox5">weiter außerhalb</label>
+                        </div>
                     </div>
                 </div>
 
@@ -224,33 +228,32 @@
 
 
 <script>
-  /*  import axios from 'axios'
-
-    export default {
-        data: function () {
-            return {
-                cats: []
-            }
-        },
-        mounted() {
-            axios
-                .get('api/cats')
-                .then(response => {
-                    this.cats = response.data;
-                })
-                .catch(e => alert(e));
-        }
-    }*/
-
-
+    /*  import axios from 'axios'
+      export default {
+          data: function () {
+              return {
+                  cats: []
+              }
+          },
+          mounted() {
+              axios
+                  .get('api/cats')
+                  .then(response => {
+                      this.cats = response.data;
+                  })
+                  .catch(e => alert(e));
+          }
+      }*/
 </script>
 
 <style>
+    .form-group
+    {
+        margin-top:20px;
+    }
     #show{
         background-color: #c55b4e;
-
     }
-
     #show textarea{
         border: 1px solid #C5281C;
         border-radius: 6px;
@@ -264,45 +267,39 @@
         padding-right: 20px;
         color: white;
         background-color: #C5281C;
-
     }
-#box label{
-    font-variant: small-caps;
-}
-#box input{
-    border: 1px solid #C5281C;
-}
-#rating{
-
-    padding-right: 350px;
-    padding-left: 15px;
-}
-#box h5{
-    font-weight: bold;
-    color: white;
-}
-#show h4{
-    color: white;
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
-#box button{
-    background-color: white;
-    color: black;
-    border-color: white;
-}
-
+    #box label{
+        font-variant: small-caps;
+    }
+    #box input{
+        border: 1px solid #C5281C;
+    }
+    #rating{
+        padding-right: 350px;
+        padding-left: 15px;
+    }
+    #box h5{
+        font-weight: bold;
+        color: white;
+    }
+    #show h4{
+        color: white;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    #box button{
+        background-color: white;
+        color: black;
+        border-color: white;
+    }
     #link p{
         color: white;
     }
-
     #footer{
         background-color: white;
         color: black;
         font-variant: small-caps;
     }
-
     /*Slider*/
     .slider {
         -webkit-appearance: none;
@@ -314,11 +311,9 @@
         -webkit-transition: .2s;
         transition: opacity .2s;
     }
-
     .slider:hover {
         opacity: 1;
     }
-
     .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
@@ -327,7 +322,6 @@
         background: #000000;
         cursor: pointer;
     }
-
     .slider::-moz-range-thumb {
         width: 25px;
         height: 25px;
