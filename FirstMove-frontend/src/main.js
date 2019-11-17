@@ -6,6 +6,14 @@ import '@fortawesome/fontawesome-free/sprites/solid.svg'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+require("dotenv").config();
+
+import * as VueGoogleMaps from "vue2-google-maps";
+Vue.use(VueGoogleMaps, {
+  load: { key: "AIzaSyCiPLPCrNjnpaHnIOqCnTV9v4RY0MAqTwc",
+    libraries:"places" // necessary for places input
+  }
+});
 
 Vue.config.productionTip = false
 
@@ -13,3 +21,4 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+

@@ -6,8 +6,7 @@
         <br>
         <div class="container" id="box">
             <form>
-                <h5 class="text-uppercase">Persönliche Daten</h5>
-                <br>
+                <h5 class="text-uppercase">Persönliche Daten</h5><br>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Name</label>
                     <div class="col">
@@ -83,10 +82,7 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Gute Busanbindung</label>
                     <div class="col">
-
                         <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
-
-
                     </div>
                 </div>
                 <div class="form-group row">
@@ -115,7 +111,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">sicherheit</label>
+                    <label class="col-sm-2 col-form-label">Kriminalitätsrate</label>
                     <div class="col">
                         <input type="range" min="1" max="10" value="1" class="slider" id="myRange5">
                     </div>
@@ -250,10 +246,6 @@
 </script>
 
 <style>
-.form-group
-{
-    margin-top:20px;
-}
     #show{
         background-color: #c55b4e;
 
@@ -270,7 +262,6 @@
         padding-bottom: 10px;
         padding-left: 15px;
         padding-right: 20px;
-
         color: white;
         background-color: #C5281C;
 

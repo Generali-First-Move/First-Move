@@ -14,7 +14,7 @@
 
         <div class="form-group row">
 
-            <div class="col-md-9">
+            <div class="col-md-5">
                 <!--
                     <div class="google-map" ref="googleMap"></div>
                      <template v-if="Boolean(this.google) && Boolean(this.map)">
@@ -26,7 +26,7 @@
                              -->
 
                 <div class="google-maps">
-                    <iframe id="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10094.445629951531!2d6.084487735032457!3d50.76423872231622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c09be02b9ad17f%3A0x262760fd637fdee1!2s52066%20Burtscheid!5e0!3m2!1sde!2sde!4v1573582989242!5m2!1sde!2sde" width="1400" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe id="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10094.445629951531!2d6.084487735032457!3d50.76423872231622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c09be02b9ad17f%3A0x262760fd637fdee1!2s52066%20Burtscheid!5e0!3m2!1sde!2sde!4v1573582989242!5m2!1sde!2sde" width="780" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
 
             </div>
@@ -40,15 +40,7 @@
                             <h3 class ="Pro">Pro:</h3>
                             <i class="fas fa-check-square"> Gute Busanbindung </i>
                             <br>
-                            <i class="fas fa-check-square"> sicherheit </i>
-                            <br>
-                            <i class="fas fa-check-square"> Ruhe/Atmosphäre </i>
-                            <br>
-                            <i class="fas fa-check-square"> Essensmöglichkeiten </i>
-                            <br>
                             <i class="fas fa-check-square">Nähe Bahnhof</i>
-                            <br>
-                            <i class="fas fa-check-square"> Uni Nähe </i>
                             <br>
                             <i class="fas fa-check-square"> Park</i>
                             <br>
@@ -60,20 +52,12 @@
                     </details>
 
                     <details>
-                        <summary id="summary2"> Stadt Bereich 2: </summary>
+                        <summary id="summary2"> Stadt Bereich 2: </summary>s
                         <div id ="orange">
                             <h3 class ="Pro">Pro:</h3>
                             <i class="fas fa-check-square"> Gute Busanbindung </i>
                             <br>
-                            <i class="fas fa-check-square"> sicherheit </i>
-                            <br>
-                            <i class="fas fa-check-square"> Ruhe/Atmosphäre </i>
-                            <br>
-                            <i class="fas fa-check-square"> Essensmöglichkeiten </i>
-                            <br>
                             <i class="fas fa-check-square">Nähe Bahnhof</i>
-                            <br>
-                            <i class="fas fa-check-square"> Uni Nähe </i>
                             <br>
                             <i class="fas fa-check-square"> Park</i>
                             <br>
@@ -90,15 +74,7 @@
                             <h3 class ="Pro">Pro:</h3>
                             <i class="fas fa-check-square"> Gute Busanbindung </i>
                             <br>
-                            <i class="fas fa-check-square"> sicherheit </i>
-                            <br>
-                            <i class="fas fa-check-square"> Ruhe/Atmosphäre </i>
-                            <br>
-                            <i class="fas fa-check-square"> Essensmöglichkeiten </i>
-                            <br>
                             <i class="fas fa-check-square">Nähe Bahnhof</i>
-                            <br>
-                            <i class="fas fa-check-square"> Uni Nähe </i>
                             <br>
                             <i class="fas fa-check-square"> Park</i>
                             <br>
@@ -118,23 +94,22 @@
             <footer >
                 <div class="container-fluid text-center text-md-left">
                     <div class="row">
-                        <div class="col-md-9">
+                        <div class="col-md-6">
                             <p>In Zusammenarbeit mit:</p>
                             <a href="https://www.generali.de/ueber-generali/ueber-uns/"><img src="@/assets/generali.png" alt="Bild" width="90" height="70"/></a>
                         </div>
                         <hr class="clearfix w-100 d-md-none pb-3">
-                        <div class="col-md-2">
+                        <div class="col-md-4">
                             <h5 class="text-uppercase">Soziale Netzwerke</h5>
                             <div class="form-group row" id="link">
                                 <p>...</p><i class="fab fa-instagram"></i>
                                 <p>...</p><i class="fab fa-twitter-square"></i>
                                 <p>...</p><i class="fab fa-facebook-square"></i>
                             </div>
-                            <p> © Copyright</p>
                         </div>
                     </div>
                 </div>
-
+                <p> © Copyright</p>
             </footer>
         </div>
     </div>
@@ -205,7 +180,7 @@ export default {
     }
     #result{
         background-color: #C5281C;
-        height: 730px;
+        height: 735px;
         color: white;
         padding-left: 10px;
 
@@ -267,12 +242,6 @@ export default {
     {
         text-align: center;
         padding-bottom: 5px;
-    }
-
-    .col-md-2
-    {
-        text-align: left;
-        left:15px;
     }
 
 
