@@ -14,7 +14,18 @@
 
         <div class="form-group row">
 
-            <div class="col-md-5">
+            <div class="col-md-9">
+
+                <div class="vue-map-container">
+                <GmapMap :center="center" :map-type-id="mapTypeId" :zoom="16">
+                    <GmapMarker
+                            v-for="(item, index) in markers"
+                            :key="index"
+                            :position="item.position"
+                            @click="center = item.position"
+                    />
+                </GmapMap>
+                </div>
                 <!--
                     <div class="google-map" ref="googleMap"></div>
                      <template v-if="Boolean(this.google) && Boolean(this.map)">
@@ -24,10 +35,11 @@
                                  />
                              </template>
                              -->
-
-                <div class="google-maps">
-                    <iframe id="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10094.445629951531!2d6.084487735032457!3d50.76423872231622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c09be02b9ad17f%3A0x262760fd637fdee1!2s52066%20Burtscheid!5e0!3m2!1sde!2sde!4v1573582989242!5m2!1sde!2sde" width="780" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
+                <!--
+                            <div class="google-maps">
+                                <iframe id="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10094.445629951531!2d6.084487735032457!3d50.76423872231622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c09be02b9ad17f%3A0x262760fd637fdee1!2s52066%20Burtscheid!5e0!3m2!1sde!2sde!4v1573582989242!5m2!1sde!2sde" width="780" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            </div>
+                 -->
 
             </div>
 
@@ -35,8 +47,8 @@
                 <h3>Präferenzen-Erfüllung</h3>
                 <fieldset>
                     <details>
-                        <summary id="summary1"> Stadt Bereich 1: </summary>
-                        <div id="green">
+                        <summary id="City1"> Stadt Bereich 1: </summary>
+                        <div id="box_green">
                             <h3 class ="Pro">Pro:</h3>
                             <i class="fas fa-check-square"> Gute Busanbindung </i>
                             <br>
@@ -52,8 +64,8 @@
                     </details>
 
                     <details>
-                        <summary id="summary2"> Stadt Bereich 2: </summary>s
-                        <div id ="orange">
+                        <summary id="City2"> Stadt Bereich 2: </summary>s
+                        <div id ="box_orange">
                             <h3 class ="Pro">Pro:</h3>
                             <i class="fas fa-check-square"> Gute Busanbindung </i>
                             <br>
@@ -69,8 +81,8 @@
                     </details>
 
                     <details>
-                        <summary id="summary3"> Stadt Bereich 3: </summary>
-                        <div id="red">
+                        <summary id="City3"> Stadt Bereich 3: </summary>
+                        <div id="box_red">
                             <h3 class ="Pro">Pro:</h3>
                             <i class="fas fa-check-square"> Gute Busanbindung </i>
                             <br>
@@ -89,33 +101,35 @@
             </div>
         </div>
 
-        <div id="footer">
-            <hr width="100%" style="height: 3px; background-color: white">
-            <footer >
-                <div class="container-fluid text-center text-md-left">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>In Zusammenarbeit mit:</p>
-                            <a href="https://www.generali.de/ueber-generali/ueber-uns/"><img src="@/assets/generali.png" alt="Bild" width="90" height="70"/></a>
-                        </div>
-                        <hr class="clearfix w-100 d-md-none pb-3">
-                        <div class="col-md-4">
-                            <h5 class="text-uppercase">Soziale Netzwerke</h5>
-                            <div class="form-group row" id="link">
-                                <p>...</p><i class="fab fa-instagram"></i>
-                                <p>...</p><i class="fab fa-twitter-square"></i>
-                                <p>...</p><i class="fab fa-facebook-square"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p> © Copyright</p>
-            </footer>
-        </div>
+
     </div>
 </template>
 
+<script>
+    export default {
+        data() {
 
+
+            return {
+
+                center: { lat: 50.775346, lng: 6.083887},
+                gestureHandling: 'none',
+                zoomControl: true,
+                mapTypeId: "terrain",
+
+                markers: [
+                    { position: { lat: 50.7753455, lng: 6.0838868 }},
+                    { position: { lat: 50.774720, lng: 6.083920 }},
+                    { position: { lat: 50.776026, lng: 6.089590 } }
+
+                ]
+
+            };
+        }
+    };
+
+
+</script>
 <!--
 <script>
 
@@ -156,6 +170,15 @@ export default {
 -->
 
 <style>
+
+    .vue-map-container {
+        height: 450px;
+        max-width: 1950px;
+        width: 100%;
+        margin:5px;
+        text-align: left;
+    }
+
     .fas
     {
         padding-right: 5px;
@@ -175,14 +198,17 @@ export default {
 
     .form-group
     {
-        margin-bottom: -1rem;
+
+        margin-top: 20px;
+        right:20px;
 
     }
     #result{
         background-color: #C5281C;
-        height: 735px;
+        height: 650px;
         color: white;
-        padding-left: 10px;
+        padding-left: 15px;
+        margin-top: 5px;
 
     }
     #result fieldset{
@@ -279,7 +305,7 @@ export default {
 
     }
 
-    #summary1 {
+    #City1 {
         padding: .25rem 1rem;
 
         background-color: limegreen;
@@ -292,7 +318,7 @@ export default {
         list-style: none; /* Triangle not shown */
     }
 
-    #summary2 {
+    #City2 {
         padding: .25rem 1rem;
 
         background-color: darkorange;
@@ -305,7 +331,7 @@ export default {
         list-style: none; /* Triangle not shown */
     }
 
-    #summary3 {
+    #City3 {
         padding: .25rem 1rem;
 
         background-color: red;
@@ -318,18 +344,18 @@ export default {
         list-style: none; /* Triangle not shown */
     }
 
-    #green
+    #box_green
     {
         background-color: rgba(136, 243, 147, 1);
         opacity: 0.8;
     }
-    #red
+    #box_red
     {
         background: rgba(255, 66, 96, 1);
         opacity: 0.75;
 
     }
-    #orange
+    #box_orange
     {
         background: rgba(255,100,20,0.8);
         opacity: 0.85;

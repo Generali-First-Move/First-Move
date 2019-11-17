@@ -11,9 +11,9 @@
                 </div>
             </div>
         </nav>
-
     </div>
 </template>
+
 
 <style>
 #home{
