@@ -81,46 +81,114 @@
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Gute Busanbindung</label>
-                    <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange">
+                    <div class="vue">
+                        <!-- default props -->
+                        <vue-slider
+                                ref="slider"
+                                v-model="value"
+                                v-bind="options"
+
+                        ></vue-slider>
+                        <h4>{{ value }}</h4>
                     </div>
+
+
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Nähe Bahnhof</label>
-                    <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange1">
+                    <div class="vue">
+                        <!-- default props -->
+                        <vue-slider
+                                ref="slider"
+                                v-model="value"
+                                v-bind="options"
 
+                        ></vue-slider>
+                        <h4>{{ value }}</h4>
                     </div>
+
                 </div>
+
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Einkaufsmöglichkeiten</label>
-                    <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange2">
+
+                    <div class="vue">
+                        <!-- default props -->
+                        <vue-slider
+                                ref="slider"
+                                v-model="value"
+                                v-bind="options"
+
+                        ></vue-slider>
+                        <h4>{{ value }}</h4>
                     </div>
+
                 </div>
+
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Essensmöglichkeiten</label>
-                    <div class="col">
+                    <!--<div class="col">
                         <input type="range" min="1" max="10" value="1" class="slider" id="myRange3">
+                    </div>-->
+                    <div class="vue">
+                        <!-- default props -->
+                        <vue-slider
+                                ref="slider"
+                                v-model="value"
+                                v-bind="options"
+
+                        ></vue-slider>
+                        <h4>{{ value }}</h4>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Ruhe/Atmosphäre</label>
-                    <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange4">
+                    <div class="vue">
+                        <!-- default props -->
+                        <vue-slider
+                                ref="slider"
+                                v-model="value"
+                                v-bind="options"
+
+                        ></vue-slider>
+                        <h4>{{ value }}</h4>
                     </div>
+                   <!-- <div class="col">
+                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange4">
+                    </div>-->
+
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Kriminalitätsrate</label>
-                    <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange5">
+                    <div class="vue">
+                        <!-- default props -->
+                        <vue-slider
+                                ref="slider"
+                                v-model="value"
+                                v-bind="options"
+
+                        ></vue-slider>
+                        <h4>{{ value }}</h4>
                     </div>
+                    <!--<div class="col">
+                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange5">
+                    </div>-->
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Uni Nähe*</label>
-                    <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange10">
+                    <div class="vue">
+                        <!-- default props -->
+                        <vue-slider
+                                ref="slider"
+                                v-model="value"
+                                v-bind="options"
+
+                        ></vue-slider>
+                        <h4>{{ value }}</h4>
                     </div>
+                    <!--<div class="col">
+                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange10">
+                    </div>-->
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label"></label>
@@ -152,7 +220,7 @@
                 <br>
                 <h5 class="text-uppercase">Freizeit</h5><br>
                 <div class="form-group row">
-                    <label for="inputplace1" class="col-sm-2 col-form-label">Sportaktivitäten</label>
+                    <label for="inputplace1" class="col-sm-2">Sportaktivitäten</label>
                     <div class="col">
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option1">
@@ -177,15 +245,35 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Park</label>
-                    <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange6">
+                    <label class="col-sm-2">Park</label>
+                    <div class="col-md-10">
+                        <div class="vue">
+                            <!-- default props -->
+                            <vue-slider
+                                    ref="slider"
+                                    v-model="value"
+                                    v-bind="options"
+
+                            ></vue-slider>
+                            <h4>{{ value }}</h4>
+                        </div>
+                       <!-- <input type="range" min="1" max="10" value="1" class="slider" id="myRange6">-->
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Nightlife</label>
-                    <div class="col">
-                        <input type="range" min="1" max="10" value="1" class="slider" id="myRange7">
+                    <label class="col-sm-2 ">Nightlife</label>
+                    <div class="col-md-10">
+                        <div class="vue">
+                            <!-- default props -->
+                            <vue-slider
+                                    ref="slider"
+                                    v-model="value"
+                                    v-bind="options"
+
+                            ></vue-slider>
+                            <h4>{{ value }}</h4>
+                        </div>
+                       <!-- <input type="range" min="1" max="10" value="1" class="slider" id="myRange7">-->
                     </div>
                 </div>
                 <div>
@@ -193,41 +281,56 @@
                 </div>
 
                 <br>
-                <p>*Felder dei mit Stern makiert sind sind optional </p>
+                <p>*Felder die mit Stern markiert sind sind optional </p>
             </form>
         </div>
     </div>
 </template>
 
-
 <script>
-  /*  import axios from 'axios'
-
-    export default {
-        data: function () {
-            return {
-                cats: []
-            }
-        },
-        mounted() {
-            axios
-                .get('api/cats')
-                .then(response => {
-                    this.cats = response.data;
-                })
-                .catch(e => alert(e));
-        }
-    }*/
-
 
 </script>
 
 <style>
+    .vue {
+        padding-left:15px;
+        margin: 10px;
+        bottom:10px;
+        width: 40%;
+    }
+    .vue h4
+    {
+        margin-left: 39px;
+
+    }
+    #custom-handle {
+        width: 2em;
+        height: 1.6em;
+        top: 50%;
+        margin-top: -.8em;
+        text-align: center;
+        line-height: 1.6em;
+    }
 
     .form-group
     {
-        margin-top: 20px;
+
     }
+    .col-md-10
+    {
+        margin-left:160px;
+
+    }
+    .col-form-label
+    {
+        bottom:0px;
+    }
+
+    .col-sm-2
+    {
+        top:0px;
+    }
+
     #show{
         background-color: #c55b4e;
 
@@ -274,21 +377,17 @@
     color: black;
     border-color: white;
 }
-
     #link p{
         color: white;
     }
 
-    #footer{
-        background-color: white;
-        color: black;
-        font-variant: small-caps;
-    }
+    /*Slider Hintergrund */
 
-    /*Slider*/
     .slider {
         -webkit-appearance: none;
-        width: 50%;
+        width: 40%;
+        top:5px;
+        left:15px;
         height: 25px;
         background: white;
         outline: none;

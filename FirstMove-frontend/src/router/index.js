@@ -19,6 +19,7 @@ const routes = [
     path: '/show-preference',
     component: Showpreference
   },
+
 ]
 
 const router = new VueRouter({

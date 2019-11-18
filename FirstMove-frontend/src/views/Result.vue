@@ -50,32 +50,54 @@
                         <summary id="City1"> Stadt Bereich 1: </summary>
                         <div id="box_green">
                             <h3 class ="Pro">Pro:</h3>
-                            <i class="fas fa-check-square"> Gute Busanbindung </i>
-                            <br>
-                            <i class="fas fa-check-square">Nähe Bahnhof</i>
-                            <br>
-                            <i class="fas fa-check-square"> Park</i>
-                            <br>
+                            <table style="width:100%">
+                                <tr>
+                                    <th><i class="fas fa-check"></i></th>
+                                    <th>Gute Busanbindung</th>
+                                </tr>
+                                <tr>
+                                    <th><i class="fas fa-check-square"></i></th>
+                                    <th>Nähe Bahnhof</th>
+                                </tr>
+                            </table>
+
                             <br>
                             <h3 class ="Contra">Contra:</h3>
-                            <i class="fas fa-times-circle"></i> Innenstadt
+                            <table>
+                                <tr>
+                                    <th><i class="fas fa-times-circle"></i></th>
+                                    <th> Innenstadt</th>
+                                </tr>
+                            </table>
+
                             <br>
                         </div>
                     </details>
 
                     <details>
-                        <summary id="City2"> Stadt Bereich 2: </summary>s
+                        <summary id="City2"> Stadt Bereich 2: </summary>
                         <div id ="box_orange">
                             <h3 class ="Pro">Pro:</h3>
-                            <i class="fas fa-check-square"> Gute Busanbindung </i>
-                            <br>
-                            <i class="fas fa-check-square">Nähe Bahnhof</i>
-                            <br>
-                            <i class="fas fa-check-square"> Park</i>
-                            <br>
+                            <table style="width:100%">
+                                <tr>
+                                    <th><i class="fas fa-check"></i></th>
+                                    <th>Gute Busanbindung</th>
+                                </tr>
+                                <tr>
+                                    <th><i class="fas fa-check-square"></i></th>
+                                    <th>Nähe Bahnhof</th>
+                                </tr>
+                            </table>
+
                             <br>
                             <h3 class ="Contra">Contra:</h3>
-                            <i class="fas fa-times-circle"></i> Innenstadt
+                            <table>
+                                <tr>
+                                    <th><i class="fas fa-times-circle"></i></th>
+                                    <th> Innenstadt</th>
+                                </tr>
+                            </table>
+
                             <br>
                         </div>
                     </details>
@@ -84,15 +106,26 @@
                         <summary id="City3"> Stadt Bereich 3: </summary>
                         <div id="box_red">
                             <h3 class ="Pro">Pro:</h3>
-                            <i class="fas fa-check-square"> Gute Busanbindung </i>
-                            <br>
-                            <i class="fas fa-check-square">Nähe Bahnhof</i>
-                            <br>
-                            <i class="fas fa-check-square"> Park</i>
-                            <br>
+                            <table style="width:100%">
+                                <tr>
+                                    <th><i class="fas fa-check"></i></th>
+                                    <th>Gute Busanbindung</th>
+                                </tr>
+                                <tr>
+                                    <th><i class="fas fa-check-square"></i></th>
+                                    <th>Nähe Bahnhof</th>
+                                </tr>
+                            </table>
+
                             <br>
                             <h3 class ="Contra">Contra:</h3>
-                            <i class="fas fa-times-circle"></i> Innenstadt
+                            <table>
+                                <tr>
+                                    <th><i class="fas fa-times-circle"></i></th>
+                                    <th> Innenstadt</th>
+                                </tr>
+                            </table>
+
                             <br>
                         </div>
                     </details>
@@ -170,6 +203,9 @@ export default {
 -->
 
 <style>
+    .fas {
+        color: dodgerblue;
+    }
 
     .vue-map-container {
         height: 450px;
@@ -178,12 +214,6 @@ export default {
         margin:5px;
         text-align: left;
     }
-
-    .fas
-    {
-        padding-right: 5px;
-    }
-
 
     #filter
     {
@@ -230,10 +260,6 @@ export default {
         text-decoration: underline;
         text-decoration-color: black;
     }
-    #footer{
-        background-color: white;
-        font-variant: small-caps;
-    }
 
     #footer p{
         color: black;
@@ -244,6 +270,11 @@ export default {
 
     #result h5{
         color: black;
+    }
+
+    #result h6
+    {
+        top:200px;
     }
 
     #result h1
@@ -259,9 +290,9 @@ export default {
     }
 
     .col-md-3{
-        left:5px;
+        right:20px;
         text-align: left;
-        bottom: 43px;
+        bottom: 45px;
     }
 
     .col-md-5
@@ -269,7 +300,10 @@ export default {
         text-align: center;
         padding-bottom: 5px;
     }
-
+    .col-md-9
+    {
+        padding-right: 60px;
+    }
 
     {
         left: 201px;
