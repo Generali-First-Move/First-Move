@@ -6,90 +6,19 @@
         <br>
         <div class="container" id="box">
             <form>
-                <h5 class="text-uppercase">Persönliche Daten</h5><br>
-                <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Name</label>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="First name">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="inputage1" class="col-sm-2 col-form-label">Alter</label>
-                    <div class="col-sm-10">
-                        <input type="number" class="form-control" id="inputage1" placeholder="Age">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="inputplace1" class="col-sm-2 col-form-label">Wohnort</label>
-                    <div class="col">
-                        <input type="text" class="form-control" id="inputplace1" placeholder="City">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Allergien</label>
-                    <div class="col">
-                        <textarea rows="4" cols="50"></textarea>
-                    </div>
-                    <div class="col">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox">Keine Allergien bekannt</label>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Anzahl Ergebnisse</label>
-                    <div class="col">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox0" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox0">1</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox2">2</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox3">3</label>
-                        </div>
-                    </div>
-                </div>
-<br>
                 <h5 class="text-uppercase">Umgebung und Lage</h5><br>
-                <div class="form-group row" >
-                    <label class="col-sm-2 col-form-label">Rating</label>
-                    <div class="col" id="rating">
-                        <table style="width:90%" id="table">
-                            <tr>
-                               <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Gute Busanbindung</label>
                     <div class="vue">
                         <!-- default props -->
                         <vue-slider
                                 ref="slider"
-                                v-model="value"
-                                v-bind="options"
+                                v-model="value1"
 
                         ></vue-slider>
-                        <h4>{{ value }}</h4>
+                        <h4>{{ value1 }}</h4>
                     </div>
 
 
@@ -100,11 +29,10 @@
                         <!-- default props -->
                         <vue-slider
                                 ref="slider"
-                                v-model="value"
-                                v-bind="options"
+                                v-model="value2"
 
                         ></vue-slider>
-                        <h4>{{ value }}</h4>
+                        <h4>{{ value2 }}</h4>
                     </div>
 
                 </div>
@@ -116,11 +44,10 @@
                         <!-- default props -->
                         <vue-slider
                                 ref="slider"
-                                v-model="value"
-                                v-bind="options"
+                                v-model="value3"
 
                         ></vue-slider>
-                        <h4>{{ value }}</h4>
+                        <h4>{{ value3 }}</h4>
                     </div>
 
                 </div>
@@ -134,11 +61,10 @@
                         <!-- default props -->
                         <vue-slider
                                 ref="slider"
-                                v-model="value"
-                                v-bind="options"
+                                v-model="value4"
 
                         ></vue-slider>
-                        <h4>{{ value }}</h4>
+                        <h4>{{ value4 }}</h4>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -147,11 +73,10 @@
                         <!-- default props -->
                         <vue-slider
                                 ref="slider"
-                                v-model="value"
-                                v-bind="options"
+                                v-model="value5"
 
                         ></vue-slider>
-                        <h4>{{ value }}</h4>
+                        <h4>{{ value5 }}</h4>
                     </div>
                    <!-- <div class="col">
                         <input type="range" min="1" max="10" value="1" class="slider" id="myRange4">
@@ -159,16 +84,15 @@
 
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Kriminalitätsrate</label>
+                    <label class="col-sm-2 col-form-label">Sicherheit</label>
                     <div class="vue">
                         <!-- default props -->
                         <vue-slider
                                 ref="slider"
-                                v-model="value"
-                                v-bind="options"
+                                v-model="value6"
 
                         ></vue-slider>
-                        <h4>{{ value }}</h4>
+                        <h4>{{ value6 }}</h4>
                     </div>
                     <!--<div class="col">
                         <input type="range" min="1" max="10" value="1" class="slider" id="myRange5">
@@ -180,11 +104,10 @@
                         <!-- default props -->
                         <vue-slider
                                 ref="slider"
-                                v-model="value"
-                                v-bind="options"
+                                v-model="value7"
 
                         ></vue-slider>
-                        <h4>{{ value }}</h4>
+                        <h4>{{ value7 }}</h4>
                     </div>
                     <!--<div class="col">
                         <input type="range" min="1" max="10" value="1" class="slider" id="myRange10">
@@ -251,11 +174,10 @@
                             <!-- default props -->
                             <vue-slider
                                     ref="slider"
-                                    v-model="value"
-                                    v-bind="options"
+                                    v-model="value8"
 
                             ></vue-slider>
-                            <h4>{{ value }}</h4>
+                            <h4>{{ value8 }}</h4>
                         </div>
                        <!-- <input type="range" min="1" max="10" value="1" class="slider" id="myRange6">-->
                     </div>
@@ -267,11 +189,10 @@
                             <!-- default props -->
                             <vue-slider
                                     ref="slider"
-                                    v-model="value"
-                                    v-bind="options"
+                                    v-model="value9"
 
                             ></vue-slider>
-                            <h4>{{ value }}</h4>
+                            <h4>{{ value9 }}</h4>
                         </div>
                        <!-- <input type="range" min="1" max="10" value="1" class="slider" id="myRange7">-->
                     </div>
@@ -288,6 +209,29 @@
 </template>
 
 <script>
+
+    import VueSlider from 'vue-slider-component'
+    import 'vue-slider-component/theme/antd.css'
+
+    export default {
+        components: {
+            VueSlider
+        },
+        data () {
+            return {
+                value1: 0,
+                value2: 0,
+                value3: 0,
+                value4: 0,
+                value5: 0,
+                value6: 0,
+                value7: 0,
+                value8: 0,
+                value9: 0
+
+            }
+        }
+    }
 
 </script>
 
