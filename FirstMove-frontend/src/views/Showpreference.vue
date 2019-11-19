@@ -9,6 +9,22 @@
 
                 <h5 class="text-uppercase">Umgebung und Lage</h5><br>
 
+                <h1>Skills</h1>
+                <draggable v-model="myArray" ghost-class="ghost" @end="onEnd">
+                    <transition-group type="transition" name="flip-list">
+                        <div class="sortable" :id="element.id" v-for="element in myArray" :key="element.id">
+                            <strong>{{element.name}}</strong>
+                        </div>
+                    </transition-group>
+                </draggable>
+
+                <p><strong>Alter Index: </strong> {{oldIndex}}</p>
+                <p><strong>Neuer Index: </strong> {{newIndex}}</p>
+
+
+
+
+
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Gute Busanbindung</label>
                     <div class="vue">
@@ -143,7 +159,7 @@
                 <br>
                 <h5 class="text-uppercase">Freizeit</h5><br>
                 <div class="form-group row">
-                    <label for="inputplace1" class="col-sm-2">Sportaktivitäten</label>
+                    <label class="col-sm-2">Sportaktivitäten</label>
                     <div class="col">
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option1">
@@ -212,13 +228,29 @@
 
     import VueSlider from 'vue-slider-component'
     import 'vue-slider-component/theme/antd.css'
+    import draggable from 'vuedraggable'
 
-    export default {
-        components: {
-            VueSlider
+
+    export default
+    {
+        name: 'DragClass',
+
+        components: {draggable, VueSlider},
+
+        methods: {
+            onEnd: function(evt){
+                // eslint-disable-next-line no-console
+                console.log(evt)
+                this.oldIndex = evt.oldIndex;
+                this.newIndex = evt.newIndex;
+            }
         },
-        data () {
-            return {
+
+
+
+        data ()
+        {
+            return{
                 value1: 0,
                 value2: 0,
                 value3: 0,
@@ -227,10 +259,23 @@
                 value6: 0,
                 value7: 0,
                 value8: 0,
-                value9: 0
+                value9: 0,
 
+                //Hier auf die Datenbank zugreifen
+                myArray:[
+                    {name:"Philipp", id:0},
+                    {name:"Tamara", id:1},
+                    {name:"Mario", id:2},
+                    {name:"Tobi", id:3},
+                    {name:"Daniel", id:4},
+                    {name:"Jil-Christ", id:5},
+                    {name:"Adrian", id:6},
+                ],
+                oldIndex:'',
+                newIndex:''
             }
         }
+
     }
 
 </script>
@@ -245,7 +290,6 @@
     .vue h4
     {
         margin-left: 39px;
-
     }
     #custom-handle {
         width: 2em;
@@ -256,15 +300,12 @@
         line-height: 1.6em;
     }
 
-    .form-group
-    {
-
-    }
     .col-md-10
     {
         margin-left:160px;
 
     }
+
     .col-form-label
     {
         bottom:0px;
@@ -275,7 +316,8 @@
         top:0px;
     }
 
-    #show{
+    #show
+    {
         background-color: #c55b4e;
 
     }
@@ -284,7 +326,9 @@
         border: 1px solid #C5281C;
         border-radius: 6px;
     }
-    #box{
+
+    #box
+    {
         border: 1px solid white;
         text-align: left;
         padding-top: 10px;
@@ -295,39 +339,52 @@
         background-color: #C5281C;
 
     }
-#box label{
-    font-variant: small-caps;
-}
-#box input{
-    border: 1px solid #C5281C;
-}
-#rating{
 
+    #box label
+    {
+    font-variant: small-caps;
+    }
+
+    #box input
+    {
+    border: 1px solid #C5281C;
+    }
+
+    #rating
+    {
     padding-right: 350px;
     padding-left: 15px;
-}
-#box h5{
+    }
+
+    #box h5
+    {
     font-weight: bold;
     color: white;
-}
-#show h4{
+    }
+
+    #show h4
+    {
     color: white;
     padding-left: 80px;
     padding-right: 80px;
-}
+    }
 
-#box button{
+    #box button
+    {
     background-color: white;
     color: black;
     border-color: white;
-}
-    #link p{
+    }
+
+    #link p
+    {
         color: white;
     }
 
     /*Slider Hintergrund */
 
-    .slider {
+    .slider
+    {
         -webkit-appearance: none;
         width: 40%;
         top:5px;
@@ -340,11 +397,13 @@
         transition: opacity .2s;
     }
 
-    .slider:hover {
+    .slider:hover
+    {
         opacity: 1;
     }
 
-    .slider::-webkit-slider-thumb {
+    .slider::-webkit-slider-thumb
+    {
         -webkit-appearance: none;
         appearance: none;
         width: 25px;
@@ -353,10 +412,43 @@
         cursor: pointer;
     }
 
-    .slider::-moz-range-thumb {
+    .slider::-moz-range-thumb
+    {
         width: 25px;
         height: 25px;
         background: #000000;
         cursor: pointer;
     }
+
+    /*Draggable*/
+
+    strong
+    {
+        display: flow;
+    }
+
+    .sortable
+    {
+        width: 50%;
+        background: white;
+        padding: 1em;
+        cursor: move;
+        margin-bottom: 2px;
+        color: #C5281C;
+    }
+
+    .flip-list
+    {
+        transition: transform 0.5s;
+    }
+
+    .ghost
+    {
+       border-left: 6px solid rgb(0, 0, 0);
+        box-shadow: 10px 10px 5px -1px rgb(0, 0, 0);
+        opacity: .7;
+    }
+
+
+
 </style>

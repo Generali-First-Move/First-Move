@@ -14,6 +14,8 @@
   import Firstmove from '@/components/Firstmove.vue';
   import Firstmovefooter from "./components/Firstmovefooter";
 
+
+
   export default {
     components:{
       Firstmovefooter,
