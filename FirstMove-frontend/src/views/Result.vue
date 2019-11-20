@@ -13,11 +13,8 @@
         </div>
 
         <div class="form-group row">
-
             <div class="col-md-9">
-
                 <div class="vue-map-container">
-                    <div class="vue-map-container">
                         <GmapMap :center="center" :zoom="zoom" :map-type-id="mapTypeId" ref="google-maps">
                             <GmapMarker
                                     v-for="(item, index) in markers"
@@ -36,8 +33,8 @@
                                     :options="{fillColor:pin.fillColor,fillOpacity:pin.fillOpacity}"
                             ></GmapCircle>
                         </GmapMap>
-                    </div>
                 </div>
+            </div>
                 <!--
                  <div class="vue-map-container">
                  <GmapMap :center="center" :zoom="zoom" :map-type-id="mapTypeId" ref="google-maps">
@@ -90,7 +87,7 @@
                  -->
 
 
-            </div>
+
 
             <div class="col-md-3">
                 <h3>Präferenzen-Erfüllung</h3>
@@ -182,8 +179,6 @@
                 </fieldset>
             </div>
         </div>
-
-
     </div>
 </template>
 
@@ -377,7 +372,7 @@ export default {
     .vue-map-container {
         height: 550px;
         max-width: 2000px;
-        width: 100%;
+        //width: 100%;
         margin:5px;
         text-align: left;
     }
@@ -469,6 +464,7 @@ export default {
     }
     .col-md-9
     {
+        text-align: left;
         padding-right: 60px;
     }
 
